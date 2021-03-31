@@ -7,6 +7,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+client.on('debug', console.log);
+
 const connections = [];
 
 client.on('message', async (msg) => {
